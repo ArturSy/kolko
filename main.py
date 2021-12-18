@@ -78,3 +78,25 @@ def gra():
                 print('\nKONIEC GRY')
                 print(f'wygrał gracz: {gracz}')
                 break
+# do sprawdzenia akapity
+            if licznik == 9:
+                print('\nKoniec gry!!!!\nJest Remis!!!')
+
+        if gracz == 'X':
+            gracz = 'O'
+        else:
+            gracz = 'X'
+
+    restart = input('\nCzy chcesz zargrać jeszcze raz?? (t/n)\n')
+    if  restart == 't' or restart =='T':
+        for key in klawiszeGry:
+            planszaDoGry[key] = ' '
+
+        gra()
+
+
+#superfunkcja
+
+if __name__ == '__main__':
+    gra()
+            
