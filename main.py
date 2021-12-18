@@ -32,7 +32,7 @@ def gra():
 
         if planszaDoGry[move] == " ":
             planszaDoGry[move] = gracz
-            licznik = +1 
+            licznik += 1 
         else:
             print("\n Wybrane pole jest zajęte. \nWybierz inne!")
             continue
@@ -79,8 +79,8 @@ def gra():
                 print(f'wygrał gracz: {gracz}')
                 break
 # do sprawdzenia akapity
-            if licznik == 9:
-                print('\nKoniec gry!!!!\nJest Remis!!!')
+        if licznik == 9:
+            print('\nKoniec gry!!!!\nJest Remis!!!')
 
         if gracz == 'X':
             gracz = 'O'
